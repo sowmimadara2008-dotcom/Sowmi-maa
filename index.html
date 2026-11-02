@@ -1,0 +1,80 @@
+``html
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Surprise</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+​<audio id="bg-music" loop>
+<source src="bgm.mp3" type="audio/mpeg">
+</audio>
+​<section id="scene-arrow" class="scene active">
+<div class="gif-container">
+<img src="gif1.gif" alt="Animation 1" class="top-gif">
+<img src="gif2.gif" alt="Animation 2" class="top-gif">
+</div>
+​<div class="interactive-area">
+<div id="heart-target" class="heart">❤️</div>
+<div id="bow-arrow-container" class="bow-container">
+<div id="arrow" class="arrow">🏹</div>
+</div>
+</div>
+<p class="instruction">Arrow-ஐ அழுத்திப் பிடித்து (Hold & Release) Heart-ஐ நோக்கி விடுங்கள்!</p>
+</section>
+​<div id="wave-overlay" class="wave-overlay"></div>
+​<section id="scene-greeting" class="scene">
+<h1 class="custom-greeting">Happy first year of getting close</h1>
+<button id="btn-to-sorry" class="next-btn">அடுத்த பக்கம் ➡️</button>
+</section>
+​<section id="scene-sorry" class="scene">
+<div class="sorry-card">
+<h1 class="sorry-text">Sorry... 🥺</h1>
+<h2 class="sorry-subtext">என்ன மன்னிச்சிரு 💔</h2>
+</div>
+<button id="btn-to-cake" class="next-btn">அடுத்த ஆச்சரியம் 🎂</button>
+</section>
+​<section id="scene-cake" class="scene">
+<div class="cake-wrapper">
+<div class="cake">
+<div class="cream-drip"></div>
+<div class="candle">
+<div id="flame" class="flame"></div>
+</div>
+</div>
+</div>
+<button id="blow-candle-btn" class="action-btn">Blow the Candle 🕯️</button>
+<button id="btn-to-gallery" class="next-btn hidden">நினைவுகள் 📸</button>
+</section>
+​<section id="scene-gallery" class="scene">
+<h2>Special Memories</h2>
+<div class="gallery-grid">
+<img src="photo1.jpg" alt="Memory 1">
+<img src="photo2.jpg" alt="Memory 2">
+<img src="photo3.jpg" alt="Memory 3">
+</div>
+<button id="btn-to-letter" class="next-btn">கடிதம் ✉️</button>
+</section>
+​<section id="scene-letter" class="scene">
+<div class="letter-card">
+<h2>உனக்காக... 💌</h2>
+<p id="typed-letter">
+உங்கள் தனிப்பட்ட பத்தியை இங்கு பதிவிடவும்.
+</p>
+</div>
+<button id="music-toggle" class="action-btn">🎵 பாட்டை இயக்கு / நிறுத்து</button>
+<button id="btn-to-love" class="next-btn">இறுதி சர்ப்ரைஸ் 💖</button>
+</section>
+​<section id="scene-love" class="scene">
+<div class="love-card">
+<h1 class="love-text">Love Youdi</h1>
+<h1 class="love-subtext">பொண்டாட்டியே ❤️✨</h1>
+</div>
+</section>
+​<script src="script.js"></script>
+</body>
+</html>
